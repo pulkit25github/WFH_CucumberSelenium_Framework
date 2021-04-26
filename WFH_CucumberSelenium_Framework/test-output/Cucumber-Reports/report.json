@@ -1,0 +1,616 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "line": 4,
+        "name": "Below are the common steps for every scenario",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 81000000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "User launch chrome browser",
+            "match": {
+              "location": "stepDefinitions.Steps.user_launch_chrome_browser()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 2691000000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "user open url \"https://admin-demo.nopcommerce.com/login\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"https://admin-demo.nopcommerce.com/login\"",
+                  "offset": 14
+                }
+              ],
+              "location": "stepDefinitions.Steps.user_open_url(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 5545000000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "user enter email as \"admin@yourstore.com\" and password as \"admin\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"admin@yourstore.com\"",
+                  "offset": 20
+                },
+                {
+                  "val": "\"admin\"",
+                  "offset": 58
+                }
+              ],
+              "location": "stepDefinitions.Steps.user_enter_email_as_and_password_as(java.lang.String,java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 9291000000,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "user clicks on login button",
+            "match": {
+              "location": "stepDefinitions.Steps.user_clicks_on_login_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 8284000000,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "user click on customer link",
+            "match": {
+              "location": "stepDefinitions.Steps.user_click_on_customer_link()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 10384000000,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "user will see customers link as sub menu option and user click on customers sub menu link",
+            "match": {
+              "location": "stepDefinitions.Steps.user_will_see_customers_link_as_sub_menu_option()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 81000000,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "user land on Customers Screen and page title should be \"Customers\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Customers\"",
+                  "offset": 55
+                }
+              ],
+              "location": "stepDefinitions.Steps.user_land_on_customers_screen_and_page_title_should_be(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-04-26T14:22:14.461Z",
+        "before": [
+          {
+            "result": {
+              "duration": 15722000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepDefinitions.Steps.setup()"
+            }
+          }
+        ],
+        "line": 14,
+        "name": "Verify user able to add customer",
+        "description": "",
+        "id": "addcustomer;verify-user-able-to-add-customer",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 10643000000,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "user able to see Add button on customers screen and user clicks on Add button",
+            "match": {
+              "location": "stepDefinitions.Steps.user_able_to_see_add_button_on_customers_screen()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 86000000,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "user will land on Add customer screen and title should be \"Add a new customer\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Add a new customer\"",
+                  "offset": 58
+                }
+              ],
+              "location": "stepDefinitions.Steps.user_will_land_on_add_customer_screen_and_title_should_be(java.lang.String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 8379000000,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "user enter details and information",
+            "match": {
+              "location": "stepDefinitions.Steps.user_enter_details_and_information()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 14326000000,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "Click on save",
+            "match": {
+              "location": "stepDefinitions.Steps.Click_on_save()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 759000000,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "user will get the messsage \"The new customer has been added successfully.\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"The new customer has been added successfully.\"",
+                  "offset": 27
+                }
+              ],
+              "location": "stepDefinitions.Steps.user_will_get_the_messsage(java.lang.String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 112000000,
+              "status": "passed"
+            },
+            "line": 21,
+            "name": "close the browser",
+            "match": {
+              "location": "stepDefinitions.Steps.close_the_browser()"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "line": 4,
+        "name": "Below are the common steps for every scenario",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 4000000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "User launch chrome browser",
+            "match": {
+              "location": "stepDefinitions.Steps.user_launch_chrome_browser()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 2498000000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "user open url \"https://admin-demo.nopcommerce.com/login\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"https://admin-demo.nopcommerce.com/login\"",
+                  "offset": 14
+                }
+              ],
+              "location": "stepDefinitions.Steps.user_open_url(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 5461000000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "user enter email as \"admin@yourstore.com\" and password as \"admin\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"admin@yourstore.com\"",
+                  "offset": 20
+                },
+                {
+                  "val": "\"admin\"",
+                  "offset": 58
+                }
+              ],
+              "location": "stepDefinitions.Steps.user_enter_email_as_and_password_as(java.lang.String,java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 7566000000,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "user clicks on login button",
+            "match": {
+              "location": "stepDefinitions.Steps.user_clicks_on_login_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 8241000000,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "user click on customer link",
+            "match": {
+              "location": "stepDefinitions.Steps.user_click_on_customer_link()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 12244000000,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "user will see customers link as sub menu option and user click on customers sub menu link",
+            "match": {
+              "location": "stepDefinitions.Steps.user_will_see_customers_link_as_sub_menu_option()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 81000000,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "user land on Customers Screen and page title should be \"Customers\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Customers\"",
+                  "offset": 55
+                }
+              ],
+              "location": "stepDefinitions.Steps.user_land_on_customers_screen_and_page_title_should_be(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-04-26T14:23:41.030Z",
+        "before": [
+          {
+            "result": {
+              "duration": 9213000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepDefinitions.Steps.setup()"
+            }
+          }
+        ],
+        "line": 24,
+        "name": "Verfiy user able to search customer with email id",
+        "description": "",
+        "id": "addcustomer;verfiy-user-able-to-search-customer-with-email-id",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 446000000,
+              "status": "passed"
+            },
+            "line": 26,
+            "name": "enter customer email",
+            "match": {
+              "location": "stepDefinitions.Steps.enter_customer_email()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 5147000000,
+              "status": "passed"
+            },
+            "line": 27,
+            "name": "click on search button",
+            "match": {
+              "location": "stepDefinitions.Steps.click_on_search_button()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 50000000,
+              "status": "passed"
+            },
+            "line": 28,
+            "name": "user able to get details of customer from email",
+            "match": {
+              "location": "stepDefinitions.Steps.user_able_to_get_details_of_customer_from_email()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 96000000,
+              "status": "passed"
+            },
+            "line": 29,
+            "name": "close the browser",
+            "match": {
+              "location": "stepDefinitions.Steps.close_the_browser()"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "line": 4,
+        "name": "Below are the common steps for every scenario",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 2000000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "User launch chrome browser",
+            "match": {
+              "location": "stepDefinitions.Steps.user_launch_chrome_browser()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 2032000000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "user open url \"https://admin-demo.nopcommerce.com/login\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"https://admin-demo.nopcommerce.com/login\"",
+                  "offset": 14
+                }
+              ],
+              "location": "stepDefinitions.Steps.user_open_url(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 5452000000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "user enter email as \"admin@yourstore.com\" and password as \"admin\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"admin@yourstore.com\"",
+                  "offset": 20
+                },
+                {
+                  "val": "\"admin\"",
+                  "offset": 58
+                }
+              ],
+              "location": "stepDefinitions.Steps.user_enter_email_as_and_password_as(java.lang.String,java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 6910000000,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "user clicks on login button",
+            "match": {
+              "location": "stepDefinitions.Steps.user_clicks_on_login_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 8261000000,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "user click on customer link",
+            "match": {
+              "location": "stepDefinitions.Steps.user_click_on_customer_link()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 12469000000,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "user will see customers link as sub menu option and user click on customers sub menu link",
+            "match": {
+              "location": "stepDefinitions.Steps.user_will_see_customers_link_as_sub_menu_option()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 85000000,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "user land on Customers Screen and page title should be \"Customers\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Customers\"",
+                  "offset": 55
+                }
+              ],
+              "location": "stepDefinitions.Steps.user_land_on_customers_screen_and_page_title_should_be(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-04-26T14:24:32.095Z",
+        "before": [
+          {
+            "result": {
+              "duration": 9199000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepDefinitions.Steps.setup()"
+            }
+          }
+        ],
+        "line": 32,
+        "name": "Verfiy user able to search customer with firstname and lastname",
+        "description": "",
+        "id": "addcustomer;verfiy-user-able-to-search-customer-with-firstname-and-lastname",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 4252000000,
+              "status": "passed"
+            },
+            "line": 34,
+            "name": "enter customer firstname",
+            "match": {
+              "location": "stepDefinitions.Steps.enter_customer_firstname()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 207000000,
+              "status": "passed"
+            },
+            "line": 35,
+            "name": "enter customer lastname",
+            "match": {
+              "location": "stepDefinitions.Steps.enter_customer_lastname()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 5148000000,
+              "status": "passed"
+            },
+            "line": 36,
+            "name": "click on search button",
+            "match": {
+              "location": "stepDefinitions.Steps.click_on_search_button()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 36000000,
+              "status": "passed"
+            },
+            "line": 37,
+            "name": "user able to get details of customer from first and last name.",
+            "match": {
+              "location": "stepDefinitions.Steps.user_able_to_get_details_of_customer_from_first_and_last_name()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 109000000,
+              "status": "passed"
+            },
+            "line": 38,
+            "name": "close the browser",
+            "match": {
+              "location": "stepDefinitions.Steps.close_the_browser()"
+            },
+            "keyword": "And "
+          }
+        ]
+      }
+    ],
+    "name": "AddCustomer",
+    "description": "",
+    "id": "addcustomer",
+    "keyword": "Feature",
+    "uri": "file:Features/AddCustomer.feature",
+    "tags": []
+  }
+]
